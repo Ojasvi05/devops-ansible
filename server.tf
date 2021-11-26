@@ -1,9 +1,9 @@
 provider "aws" {
 region = "ap-south-1"
 }
-resource "aws_instance" "myawsserver" {
+resource "aws_instance" "myserver12" {
   ami = "ami-0108d6a82a783b352"
-  instance_type = "t2.small"
+  instance_type = "t2.micro"
   key_name = "os-import"
 
   tags = {
